@@ -6,15 +6,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.css">
   <title>优雅写代码</title>
 </head>
 
 <body>
-  <div class="header">
+  <div class="container first-img" >
+    <h1 class="center teamname animated swing">/*  Elegant Code  */</h1>
+    <div class="button-more"><a class="hvr-grow" onClick="document.getElementById('middle').scrollIntoView();">MORE</a></div>
+  </div>
 
+  <div class="container members" id="middle">
+    <div class="member-info">
+      <div class="member-left float-left">
+        <div class="img-border">
+          <img class="member-img animated rotateIn" src="https://7pp.org/css/images/Hey.jpg" alt="Hopsken">
+        </div>
+      </div>
+      <div class="about float-right">
+        <div class="about-detail-right">
+          <div class="about-name">Hopsken</div>
+          <div class="about-intro">Say Something.</div>
+          <p class="about-info-detail">
+            <i class="fa fa-user"></i>
+            <span>前端&后端&运维</span>
+          </p>
+          <p class="about-info-detail">
+            <i class="fa fa-github-alt"></i>
+            <span><a href="https://github.com/hopsken">@Hopsken</a><span>
+          </p>
+          <p class="about-info-detail">
+            <i class="fa fa-rss"></i>
+            <span><a href="https://7pp.org"> https://7pp.org</a></span>
+          </p>
+          <p class="about-info-detail">
+            <i class="fa fa-map-marker"></i>
+            <span>Suzhou, China</span>
+          </p>
+          <p class="about-info-detail">
+            <i class="fa fa-envelope"></i>
+            <span>i#7pp.org</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="member-info">
+      <div class="member-left float-right">
+        <div class="img-border">
+          <img class="member-img animated rotateIn" src="https://7pp.org/css/images/Hey.jpg" alt="Hopsken">
+        </div>
+      </div>
+      <div class="about float-left">
+        <div class="about-detail-left">
+          <!--member info here -->
+        </div>
+      </div>
+    </div>
+    <div class="member-info">
+      <div class="member-left float-left">
+        <div class="img-border">
+          <img class="member-img animated rotateIn" src="https://7pp.org/css/images/Hey.jpg" alt="Hopsken">
+        </div>
+      </div>
+      <div class="about float-left">
+        <div class="about-detail-left">
+          <!--member info here -->
+        </div>
+      </div>
+    </div>
+    <div class="member-info">
+      <div class="member-left float-right">
+        <div class="img-border">
+          <img class="member-img animated rotateIn" src="https://7pp.org/css/images/Hey.jpg" alt="Hopsken">
+        </div>
+      </div>
+      <div class="about float-left">
+        <div class="about-detail-left">
+          <!--member info here -->
+        </div>
+      </div>
+    </div>
+    <div class="member-info">
+      <div class="member-left float-left">
+        <div class="img-border">
+          <img class="member-img animated rotateIn" src="https://7pp.org/css/images/Hey.jpg" alt="Hopsken">
+        </div>
+      </div>
+      <div class="about float-left">
+        <div class="about-detail-left">
+          <!--member info here -->
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="container" >
-    <h1 class="center teamname">/* Elegant Code */</h1>
-  </div>
+
+  <div class="copyright center">©2016 / Finished by members of Elegant-Code with ❤. </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.6/jquery.smoove.min.js"></script>
+  <script>
+    $(".member-info, .container").smoove({
+      offset  : '15%',
+      moveX   : '100px',
+      moveY   : '180px',
+    });
+  </script>
 </body>
 </html>
